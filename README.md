@@ -13,7 +13,7 @@ how? basically instead of searching through the university's webstite and look t
 
 ## 3. What the system will do?
 
-It's a qeustion and answer assistant! it will reretrieve JUST'S offical study plan for any major like Data Science, Computer Science... etc
+It's a qeustion and answer assistant! it will retrieve JUST'S offical study plan for any major like Data Science, Computer Science... etc
 
 The user will ask it a question like: 
 
