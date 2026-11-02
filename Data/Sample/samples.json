@@ -1,0 +1,9 @@
+{"code": "1783300", "name": "التعلم العميق (Deep Learning)", "hours": 3, "prereq": "232ب.ع", "type": "Major Requirement"}
+
+{"code": "821011", "name": "تفاضل و تكامل (1)", "hours": 3, "prereq": "None", "type": "University Requirement"}
+
+{"code": "1783211", "name": "البيانات الكبيرة (Big Data)", "hours": 2, "prereq": "ع 221ب (Data Structures)", "type": "Major Requirement"}
+
+{"code": "1782320", "name": "مختبر تعلم الآلات", "hours": 1, "prereq": "232ب.ع", "type": "Major Requirement"}
+
+{"code": "1782950", "name": "الممارسة المهنية في علم البيانات (1)", "hours": 6, "prereq": "None", "type": "Major Requirement"}
