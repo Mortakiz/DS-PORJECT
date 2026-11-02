@@ -58,7 +58,7 @@ Compute limits, The free API we will use may hit the rate limit
 
 backup plan: 
 
-API responses during development and use Google Colab for running the Python scripts.
+We will cache API responses during development (save answers locally) so we don't waste API calls, and use Google Colab as a backup environment.
 
 ## Data Card
 
