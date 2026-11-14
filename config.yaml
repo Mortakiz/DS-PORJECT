@@ -1,0 +1,16 @@
+model_name: "aubmindlab/aragpt2-base"
+
+cpt_train_file: "data/cpt/train.txt"
+cpt_val_file: "data/cpt/val.txt"
+sft_data_file: "data/sft_pairs.json"
+test_data_file: "SEED-TEST-CSV.csv"
+
+cpt_block_size: 512
+cpt_epochs: 1
+cpt_learning_rate: 0.00005
+cpt_batch_size: 4
+cpt_gradient_accumulation_steps: 2
+
+sft_epochs: 3
+sft_learning_rate: 0.00002
+sft_batch_size: 4

@@ -1,0 +1,31 @@
+﻿id,question,expected_answer,source,difficulty
+1,ما هو المتطلب السابق لمساق التعلم العميق؟,مساق تعلم الآلة (232ب.ع),Data Science Plan p.23,easy
+2,What is the prerequisite for Big Data (البيانات الكبيرة)?,Data Structures (ع 221ب),Data Science Plan p.24,easy
+3,كم عدد الساعات المعتمدة لمساق التفاضل والتكامل (1)؟,3 ساعات,Data Science Plan p.17,easy
+4,Can I take Deep Learning and Big Data in the same semester?,Yes; Big Data requires Data Structures and Deep Learning requires Machine Learning. No conflict.,Data Science Plan p.23-24,medium
+5,ما هي متطلبات مساق مقدمة في البرمجة الكينونية؟,مساق مقدمة في البرمجة (821011),Data Science Plan p.17,easy
+6,What is the prerequisite for the Machine Learning Lab?,Machine Learning (232ب.ع),Data Science Plan p.23,easy
+7,هل مساق مبادئ الجبر الخطي إجباري أم اختياري؟,إجباري (متطلب قسم),Data Science Plan p.21,easy
+8,What is the course code for Deep Learning?,1783300,Data Science Plan p.23,easy
+9,Can I take the Professional Practice (1) course if I haven't finished my major courses?,Yes; it has no listed prerequisite.,Data Science Plan p.23,medium
+10,ما هو المتطلب السابق لمساق البيانات الكبيرة؟,مساق أساسيات قواعد البيانات (ع 221ب),Data Science Plan p.24,easy
+11,How many credit hours is the Machine Learning Lab?,1 credit hour,Data Science Plan p.23,easy
+12,What is the prerequisite for Calculus (1)?,None,Data Science Plan p.17,easy
+13,هل يمكنني أخذ مساق التعلم العميق ومختبر التعلم العميق في نفس الفصل؟,"نعم، لا يوجد تعارض في المتطلبات السابقة بينهما.",Data Science Plan p.23-24,medium
+14,What is the prerequisite for the Data Science Professional Practice (2)?,Professional Practice (1) (1782950),Data Science Plan p.28,medium
+15,ما هو رمز مساق البيانات الكبيرة؟,1783211,Data Science Plan p.24,easy
+16,Can I take Data Structures if I am currently taking Introduction to Programming?,No; you must finish the prerequisite first.,Data Science Plan p.17,hard
+17,What are the prerequisites for the Graduation Project (1)?,None listed.,Data Science Plan p.27,easy
+18,هل مساق مهارات الاتصال إجباري؟,"نعم، هو متطلب جامعة إجباري.",Data Science Plan p.3,easy
+19,How many hours is the Professional Practice (3) course?,9 hours,Data Science Plan p.27,easy
+20,What is the prerequisite for the Graduation Project (2)?,Graduation Project (1) (1784801),Data Science Plan p.27,medium
+21,ما هو المتطلب السابق لمساق حوكمة البيانات؟,لا يوجد متطلب سابق.,Data Science Plan p.26,easy
+22,Can I take Big Data Lab and Big Data in the same term?,Yes; they are designed to be taken together.,Data Science Plan p.24,medium
+23,What is the prerequisite for Image Processing?,None listed.,Data Science Plan p.23,easy
+24,هل مساق تاريخ العلوم عند العرب إجباري أم اختياري؟,اختياري (متطلب جامعة).,Data Science Plan p.15,easy
+25,What is the prerequisite for the Machine Learning course?,Linear Algebra (مبادئ الجبر الخطي),Data Science Plan p.23,medium
+26,Can I take Graduation Project (1) and Graduation Project (2) in the same semester?,No; Project 1 is a prerequisite for Project 2.,Data Science Plan p.27,medium
+27,ما هو المتطلب السابق لمساق مختبر تعلم الآلات؟,مساق تعلم الآلات (232ب.ع),Data Science Plan p.23,easy
+28,What is my current GPA?,I don't know. I am a course planning assistant and do not have access to personal student data. Please check with the Registration Department.,N/A,hard
+29,Can I get a scholarship if I take 18 credits?,I don't know. The provided documents do not contain scholarship policies. Please check the university regulations or ask the admission office.,N/A,hard
+30,Who is the best professor for Deep Learning?,I don't know. I can only answer questions about course prerequisites and study plans. Please consult other students or your advisor.,N/A,hard

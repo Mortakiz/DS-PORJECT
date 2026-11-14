@@ -1,96 +1,53 @@
-## 1.Team and roles: 
-1- Yaman Al-Hindawi: Product lead, Engineering lead
+## Setup:
 
-2- Soode Al-Rosan: Evaluation lead, Data lead
+git clone https://github.com/Mortakiz/DS-PORJECT.git
 
-## 2. Users, and the problem we will fix:
+cd DS-PROJECT
 
-Users:  First and second year students at Jordan University of Science and Technology.
+# Instal dependencies
 
-The problem: In each term first and second year students struggle with what courses should they use, what are the prerequisites for this course? how many courses this course is a prerequisite for? SO! we decided to make an application that can help our students with their academic plan
+pip install transformers torch datasets pyyaml accelerate
 
-how? basically instead of searching through the university's webstite and look through scattered information and ask in facebook groups they can just ask a LLM and it will answer them right away!
+## How to train:
 
-## 3. What the system will do?
+# 1- CPT
+run this code in a cell (Google Colab or kaggle):
 
-It's a qeustion and answer assistant! it will retrieve JUST'S offical study plan for any major like Data Science, Computer Science... etc
+python train_cpt.py
 
-The user will ask it a question like: 
+Reads data/cpt/train.txt and data/cpt/val.txt.
 
-"ما هو المتطلب السابق لمساق  التعلم العميق؟"
+Saves checkpoint to ./checkpoints/cpt_final/.
 
-The system will immediately answer: 
+Logs initial and final perplexity.
 
-"المتطلب السابق لمساق التعلم العميق هو: تعلم الالة"
+# 2- SFT
 
-another example: 
+run this code in a cell (Google Colab or kaggle):
 
-"كم عدد ساعات مساق تصور و اكتشاف البيانات؟"
+python train_sft.py
 
-answer:
+Loads ./checkpoints/cpt_final/.
 
-"عدد ساعات مساق تصور و اكتشاف البيانات هو 3 ساعات"
+Reads data/sft_pairs.json (300 pairs).
 
-## 4. Data:
+Saves checkpoint to ./checkpoints/sft_final/.
 
-We will use the official JUST documents like:
+## How to score:
 
-study plans and Regulations (University registration rules and guidelines from the JUST regulations page.)
+run this code in a cell (Google Colab or kaggle):
 
-Amount: 1 complete data science study plan (29 pages, ~150 course records)
+python score.py
 
-## 5. Planned architecture:
+Loads tests/test_questions.csv (30 questions).
 
-user asks a question -> Search our study plan data (find relevant courses) -> Send the question + the found course rules to an LLM API ->
-Return the answer
+Runs all 3 models (base, CPT, SFT) with greedy decoding (temperature=0, max 50 tokens).
 
-## 6. How you will measure success:
+Saves one CSV per model in ./results/.
 
-Answer accuracy: The percentage of correct answers (30-question seed test set).
+Columns: id, question, expected_answer, model_answer.
 
-Citation accuracy: The percentage of answers that correctly cite the exact course code or page number.
+## Where checkpoints are:
 
-Refusal correctness: The percentage of "should refuse" questions where the system correctly says "I don't know" instead of hallucinating.
+Google Drive: https://drive.google.com/drive/folders/1Je8lV9PI_QGxm817bvAMfGjlniQ5eebz?usp=sharing
 
-## 7. Risks:
-
-Compute limits, The free API we will use may hit the rate limit
-
-backup plan: 
-
-We will cache API responses during development (save answers locally) so we don't waste API calls, and use Google Colab as a backup environment.
-
-## Data Card
-
-short description of the data that we will use
-
-## Source:
-
-Study Plans: Jordan University of Science and Technology (JUST) — Faculty of Computer and
-Information Technology. 
-
-Link:https://www.just.edu.jo/ar/FacultiesandDepartments/it/Pages/Programs.aspx?degree =1
-
-## Permission:
-
-These are publicly available documents on the official JUST website. No login is required. They
-are published for public use by students
-
-## Size:
-
-1 complete study plan (data science) (29 pages) 14,500 tokens.
-
-## Language and format:
-
-Arabic, The original format is HTML tables saved as a PDF For the project, then we will extract
-this text from the PDF and turn it into a clean JSON/CSV format so the system can read it
-perfectly
-
-## Sensitive content:
-
-None. The documents contain only public academic rules, course descriptions, and
-prerequisites. No personal student data (e.g., names, grades, IDs) is included in the source files.
-
-## Sample:
-
-You can find it in the repo's files "data/sample/samples.json"
