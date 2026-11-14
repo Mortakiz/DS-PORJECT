@@ -1,0 +1,12 @@
+Initial Perplexity: 3937.11
+
+{'loss': '8.598', 'grad_norm': '89.99', 'learning_rate': '4.489e-05', 'epoch': '0.1136'}
+{'loss': '7.417', 'grad_norm': '61.5', 'learning_rate': '3.92e-05', 'epoch': '0.2273'}
+{'loss': '5.747', 'grad_norm': '36.23', 'learning_rate': '3.352e-05', 'epoch': '0.3409'}
+{'loss': '5.1', 'grad_norm': '29.08', 'learning_rate': '2.784e-05', 'epoch': '0.4545'}
+{'loss': '4.766', 'grad_norm': '26.64', 'learning_rate': '2.216e-05', 'epoch': '0.5682'}
+
+{'eval_loss': '3.826', 'eval_runtime': '3.126', 'eval_samples_per_second': '23.35', 'eval_steps_per_second': '3.199', 'epoch': '0.5682'}
+{'eval_loss': '3.105', 'eval_runtime': '3.312', 'eval_samples_per_second': '22.04', 'eval_steps_per_second': '3.019', 'epoch': '1'}
+
+Final Perplexity: 55.56
