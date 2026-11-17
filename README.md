@@ -51,3 +51,9 @@ Columns: id, question, expected_answer, model_answer.
 
 Google Drive: https://drive.google.com/drive/folders/1Je8lV9PI_QGxm817bvAMfGjlniQ5eebz?usp=sharing
 
+## Models links:
+
+sft: https://huggingface.co/special-topics/team-sft
+
+cpt: https://huggingface.co/special-topics/team-cpt
+
